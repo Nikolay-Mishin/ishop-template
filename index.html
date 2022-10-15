@@ -1,0 +1,670 @@
+
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html" />
+    <link rel="shortcut icon" href="http://ishop/images/star.png" type="image/png" />
+    <!-- тег <base> для указания корневого каталога, от которого работают все ссылки ресурсов (href, src) - link, script, img -->
+    <!-- "/" - строить ссылки от корня сайта (подставляется перед всеми ссылками) -->
+    <!-- добавляет данное значение ко всем относительным ссылкам (без / вначале), делая их абсолютными (от корня) -->
+    <base href="/">
+    <!-- получаем каноническую ссылку -->
+    <link rel='canonical' href='http://ishop'>    <!-- получаем разметку с мета-тегами из вида -->
+    <title>Главная страница</title>
+<meta name='description' content=Описание...>
+<meta name='keywords' content=Ключевики...>
+    <!-- получаем разметку со стилями из вида -->
+    <!-- lib -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="adminlte/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="megamenu/css/ionicons.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="megamenu/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+<link href="jquery-ui-1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" media="all" />
+<!-- main -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+<!-- add -->
+    <!-- Vendor-Theme-files -->
+    <!-- theme-style -->
+    <!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /> -->
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="adminlte/bower_components/font-awesome/css/font-awesome.min.css">
+    <link href="megamenu/css/ionicons.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="megamenu/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" /> -->
+    <!-- //theme-style -->
+    <!--start-menu-->
+    <!-- <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" /> -->
+    <!--Custom-Theme-files-->
+    <!--theme-style-->
+    <!-- <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" /> -->
+    <!--//theme-style-->
+</head>
+
+<body>
+<!--top-header-->
+<div class="top-header">
+    <div class="container">
+        <div class="top-header-main">
+            <!-- виджеты -->
+            <div class="col-md-6 top-header-left">
+                <div class="drop">
+                    <!-- виджет валюты -->
+                    <div class="box">
+                        <select id="currency" tabindex="4" class="dropdown drop">
+                            <!-- вызываем виджет валюты (создаем объект класса) -->
+                            <!-- активная валюта -->
+<option value="" class="label">RUR</option>
+<!-- в цикле выводим все валюты, кроме активной -->
+                <option value="UAH">UAH</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                            </select>
+                    </div>
+
+                    <!-- смена языка -->
+                    <div class="box">
+                        <select tabindex="4" class="dropdown">
+                            <option value="" class="label">English :</option>
+                            <option value="1">English</option>
+                            <option value="2">French</option>
+                            <option value="3">German</option>
+                        </select>
+                    </div>
+
+                    <!-- вход и регистрация -->
+                    <div class="btn-group">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Аккаунт <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                                            <li><a href="user/login">Вход</a></li>
+                                <li><a href="user/signup">Регистрация</a></li>
+                                                    </ul>
+                    </div>
+
+                    <div class="btn-group">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Виджеты <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                                            <li><a href="chat">Чат</a></li>
+                                <li><a href="collection">Коллекции</a></li>
+                                                    </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <!-- корзина -->
+            <div class="col-md-6 top-header-left">
+                <div class="cart box_1">
+                    <!-- ссылка для открытия модального окна корзины -->
+                    <!-- return false; - для отмены стандартного поведения ссылки -->
+                    <a href="cart/show" onclick="getCart(); return false;">
+                        <div class="total">
+                            <img src="images/cart-1.png" alt="" />
+                            <!-- если корзина не пуста, выводим общую сумму заказа -->
+                                                            <span class="simpleCart_total">Empty Cart</span>
+                                                    </div>
+                    </a>
+                    <!--<a href="checkout.html">
+                        <div class="total">
+                            <span class="simpleCart_total"></span></div>
+                        <img src="images/cart-1.png" alt="" />
+                    </a>
+                    <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>-->
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--top-header-->
+
+<!--start-logo-->
+<div class="logo">
+    <!-- ссылка на главную -->
+    <a href="http://ishop"><h1>Luxury Watches</h1></a>
+</div>
+<!--start-logo-->
+
+<!--bottom-header-->
+<div class="header-bottom">
+    <div class="container">
+        <div class="header">
+            <!-- меню -->
+            <div class="col-md-9 header-left">
+                <!-- плагин MegaMenu (memenu) -->
+                <div class="menu-container">
+                    <!-- обертка для меню -->
+                    <div class="menu">
+                        <!-- объект виджета меню - передаем параметры (пользовательский шаблон) и аттрибуты -->
+                        <ul class='menu' ><li>
+    <a href="category/men">Men</a>
+            <ul>
+            <li>
+    <a href="category/elektronnye">Электронные</a>
+            <ul>
+            <li>
+    <a href="category/casio">Casio</a>
+    </li>
+<li>
+    <a href="category/citizen">Citizen</a>
+    </li>
+        </ul>
+    </li>
+<li>
+    <a href="category/mehanicheskie">Механические</a>
+            <ul>
+            <li>
+    <a href="category/royal-london">Royal London</a>
+    </li>
+<li>
+    <a href="category/seiko">Seiko</a>
+    </li>
+<li>
+    <a href="category/epos">Epos</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+<li>
+    <a href="category/women">Women</a>
+            <ul>
+            <li>
+    <a href="category/elektronnye-11">Электронные</a>
+            <ul>
+            <li>
+    <a href="category/adriatica">Adriatica</a>
+    </li>
+        </ul>
+    </li>
+<li>
+    <a href="category/mehanicheskie-12">Механические</a>
+            <ul>
+            <li>
+    <a href="category/anne-klein">Anne Klein</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+<li>
+    <a href="category/kids">Kids</a>
+    </li>
+<li>
+    <a href="category/testovaya-kategoriya">Тестовая категория</a>
+            <ul>
+            <li>
+    <a href="category/testovaya-kategoriya-2">Тестовая категория 2</a>
+    </li>
+        </ul>
+    </li>
+</ul>                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+
+            <!-- поиск -->
+            <div class="col-md-3 header-right">
+                <div class="search-bar">
+                    <!-- форма поиска - плагин typeahead -->
+                    <!-- autocomplete - подсказки -->
+                    <form action="search" method="get" autocomplete="off">
+                        <input type="text" class="typeahead" id="typeahead" name="s">
+                        <input type="submit" value="">
+                    </form>
+                    <!--<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                    <input type="submit" value="">-->
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!--bottom-header-->
+
+<!-- выводим динамический контент данной страницы -->
+<div class="content">
+    <!-- сообщения от ошибках и успехе -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                                            </div>
+        </div>
+    </div>
+            <!-- динамический контент -->
+
+<!--banner-starts-->
+<div class="bnr" id="home">
+    <div  id="top" class="callbacks_container">
+        <ul class="rslides" id="slider4">
+            <li>
+                <img src="images/bnr-1.jpg" alt=""/>
+            </li>
+            <li>
+                <img src="images/bnr-2.jpg" alt=""/>
+            </li>
+            <li>
+                <img src="images/bnr-3.jpg" alt=""/>
+            </li>
+        </ul>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+<!--banner-ends-->
+
+<!--about-starts-->
+<!-- выводим бренды -->
+<div class="about">
+    <div class="container">
+        <div class="about-top grid-1">
+            <!-- выводим отдельно каждый бренд -->
+                            <div class="col-md-4 about-left">
+                <figure class="effect-bubba">
+                    <!-- изображение -->
+                    <img class="img-responsive" src="images/abt-1.jpg" alt=""/>
+                    <figcaption>
+                        <!-- наименование -->
+                        <h2>Casio</h2>
+                        <!-- описание -->
+                        <p>In sit amet sapien eros Integer dolore magna aliqua</p>
+                    </figcaption>
+                </figure>
+            </div>
+                            <div class="col-md-4 about-left">
+                <figure class="effect-bubba">
+                    <!-- изображение -->
+                    <img class="img-responsive" src="images/abt-2.jpg" alt=""/>
+                    <figcaption>
+                        <!-- наименование -->
+                        <h2>Citizen</h2>
+                        <!-- описание -->
+                        <p>In sit amet sapien eros Integer dolore magna aliqua</p>
+                    </figcaption>
+                </figure>
+            </div>
+                            <div class="col-md-4 about-left">
+                <figure class="effect-bubba">
+                    <!-- изображение -->
+                    <img class="img-responsive" src="images/abt-3.jpg" alt=""/>
+                    <figcaption>
+                        <!-- наименование -->
+                        <h2>Royal London</h2>
+                        <!-- описание -->
+                        <p>In sit amet sapien eros Integer dolore magna aliqua</p>
+                    </figcaption>
+                </figure>
+            </div>
+                        <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--about-end-->
+
+<!--product-starts-->
+<!-- выводим хиты -->
+<!-- получаем активную валюту из контейнера (реестра) -->
+<div class="product">
+    <div class="container">
+        <div class="product-top">
+            <div class="product-one">
+            <!-- выводим отдельно каждый хит -->
+                            <div class="col-md-3 product-left">
+                    <div class="product-main simpleCart_shelfItem">
+                        <!-- изображение -->
+                        <a href="product/casio-mrp-700-1avef.html" class="mask"><img class="img-responsive zoom-img" src="images/p-1.png" alt="" /></a>
+                        <div class="product-bottom">
+                            <!-- алиас - короткое наименование для ссылки (ЧПУ) -->
+                            <!-- наименование -->
+                            <h3><a href="product/casio-mrp-700-1avef.html">Casio MRP-700-1AVEF</a></h3>
+                            <p>Explore Now</p>
+                            <h4>
+                                <!-- ссылка для добавления товара в корзину (текущая цена) -->
+                                <!-- в контроллере cart вызывается экшен add и передается id товара -->
+                                <a class="add-to-cart-link" href="cart/add?id=1" data-id="1"><i></i></a> <!-- цена товара -->
+                                <span class=" item_price">300 руб.</span>
+                                <!-- выводим старую цену, если такая есть -->
+                                                            </h4>
+                        </div>
+                        <!-- рассчет размера скидки (при наличии старой цены) -->
+                                            </div>
+                </div>
+                            <div class="col-md-3 product-left">
+                    <div class="product-main simpleCart_shelfItem">
+                        <!-- изображение -->
+                        <a href="product/casio-mrp-700-1avef.html" class="mask"><img class="img-responsive zoom-img" src="images/p-2.png" alt="" /></a>
+                        <div class="product-bottom">
+                            <!-- алиас - короткое наименование для ссылки (ЧПУ) -->
+                            <!-- наименование -->
+                            <h3><a href="product/casio-mrp-700-1avef.html">Casio MQ-24-7BUL</a></h3>
+                            <p>Explore Now</p>
+                            <h4>
+                                <!-- ссылка для добавления товара в корзину (текущая цена) -->
+                                <!-- в контроллере cart вызывается экшен add и передается id товара -->
+                                <a class="add-to-cart-link" href="cart/add?id=2" data-id="2"><i></i></a> <!-- цена товара -->
+                                <span class=" item_price">70 руб.</span>
+                                <!-- выводим старую цену, если такая есть -->
+                                                                <small><del>80 руб.</del></small>
+                                                        </h4>
+                        </div>
+                        <!-- рассчет размера скидки (при наличии старой цены) -->
+                                                    <div class="srch">
+                                <span>-12%</span>
+                            </div>
+                                            </div>
+                </div>
+                            <div class="col-md-3 product-left">
+                    <div class="product-main simpleCart_shelfItem">
+                        <!-- изображение -->
+                        <a href="product/casio-mrp-700-1avef.html" class="mask"><img class="img-responsive zoom-img" src="images/p-3.png" alt="" /></a>
+                        <div class="product-bottom">
+                            <!-- алиас - короткое наименование для ссылки (ЧПУ) -->
+                            <!-- наименование -->
+                            <h3><a href="product/casio-mrp-700-1avef.html">Casio GA-1000-1AER</a></h3>
+                            <p>Explore Now</p>
+                            <h4>
+                                <!-- ссылка для добавления товара в корзину (текущая цена) -->
+                                <!-- в контроллере cart вызывается экшен add и передается id товара -->
+                                <a class="add-to-cart-link" href="cart/add?id=3" data-id="3"><i></i></a> <!-- цена товара -->
+                                <span class=" item_price">400 руб.</span>
+                                <!-- выводим старую цену, если такая есть -->
+                                                            </h4>
+                        </div>
+                        <!-- рассчет размера скидки (при наличии старой цены) -->
+                                            </div>
+                </div>
+                            <div class="col-md-3 product-left">
+                    <div class="product-main simpleCart_shelfItem">
+                        <!-- изображение -->
+                        <a href="product/casio-mrp-700-1avef.html" class="mask"><img class="img-responsive zoom-img" src="images/p-4.png" alt="" /></a>
+                        <div class="product-bottom">
+                            <!-- алиас - короткое наименование для ссылки (ЧПУ) -->
+                            <!-- наименование -->
+                            <h3><a href="product/casio-mrp-700-1avef.html">Citizen JP1010-00E</a></h3>
+                            <p>Explore Now</p>
+                            <h4>
+                                <!-- ссылка для добавления товара в корзину (текущая цена) -->
+                                <!-- в контроллере cart вызывается экшен add и передается id товара -->
+                                <a class="add-to-cart-link" href="cart/add?id=4" data-id="4"><i></i></a> <!-- цена товара -->
+                                <span class=" item_price">400 руб.</span>
+                                <!-- выводим старую цену, если такая есть -->
+                                                            </h4>
+                        </div>
+                        <!-- рассчет размера скидки (при наличии старой цены) -->
+                                            </div>
+                </div>
+                            <div class="col-md-3 product-left">
+                    <div class="product-main simpleCart_shelfItem">
+                        <!-- изображение -->
+                        <a href="product/casio-mrp-700-1avef.html" class="mask"><img class="img-responsive zoom-img" src="images/p-5.png" alt="" /></a>
+                        <div class="product-bottom">
+                            <!-- алиас - короткое наименование для ссылки (ЧПУ) -->
+                            <!-- наименование -->
+                            <h3><a href="product/casio-mrp-700-1avef.html">Citizen BJ2111-08E</a></h3>
+                            <p>Explore Now</p>
+                            <h4>
+                                <!-- ссылка для добавления товара в корзину (текущая цена) -->
+                                <!-- в контроллере cart вызывается экшен add и передается id товара -->
+                                <a class="add-to-cart-link" href="cart/add?id=5" data-id="5"><i></i></a> <!-- цена товара -->
+                                <span class=" item_price">500 руб.</span>
+                                <!-- выводим старую цену, если такая есть -->
+                                                            </h4>
+                        </div>
+                        <!-- рассчет размера скидки (при наличии старой цены) -->
+                                            </div>
+                </div>
+                            <div class="col-md-3 product-left">
+                    <div class="product-main simpleCart_shelfItem">
+                        <!-- изображение -->
+                        <a href="product/casio-mrp-700-1avef.html" class="mask"><img class="img-responsive zoom-img" src="images/p-6.png" alt="" /></a>
+                        <div class="product-bottom">
+                            <!-- алиас - короткое наименование для ссылки (ЧПУ) -->
+                            <!-- наименование -->
+                            <h3><a href="product/casio-mrp-700-1avef.html">Citizen AT0696-59E</a></h3>
+                            <p>Explore Now</p>
+                            <h4>
+                                <!-- ссылка для добавления товара в корзину (текущая цена) -->
+                                <!-- в контроллере cart вызывается экшен add и передается id товара -->
+                                <a class="add-to-cart-link" href="cart/add?id=6" data-id="6"><i></i></a> <!-- цена товара -->
+                                <span class=" item_price">350 руб.</span>
+                                <!-- выводим старую цену, если такая есть -->
+                                                                <small><del>355 руб.</del></small>
+                                                        </h4>
+                        </div>
+                        <!-- рассчет размера скидки (при наличии старой цены) -->
+                                                    <div class="srch">
+                                <span>-1%</span>
+                            </div>
+                                            </div>
+                </div>
+                            <div class="col-md-3 product-left">
+                    <div class="product-main simpleCart_shelfItem">
+                        <!-- изображение -->
+                        <a href="product/casio-mrp-700-1avef.html" class="mask"><img class="img-responsive zoom-img" src="images/p-7.png" alt="" /></a>
+                        <div class="product-bottom">
+                            <!-- алиас - короткое наименование для ссылки (ЧПУ) -->
+                            <!-- наименование -->
+                            <h3><a href="product/casio-mrp-700-1avef.html">Q&Q Q956J302Y</a></h3>
+                            <p>Explore Now</p>
+                            <h4>
+                                <!-- ссылка для добавления товара в корзину (текущая цена) -->
+                                <!-- в контроллере cart вызывается экшен add и передается id товара -->
+                                <a class="add-to-cart-link" href="cart/add?id=7" data-id="7"><i></i></a> <!-- цена товара -->
+                                <span class=" item_price">20 руб.</span>
+                                <!-- выводим старую цену, если такая есть -->
+                                                            </h4>
+                        </div>
+                        <!-- рассчет размера скидки (при наличии старой цены) -->
+                                            </div>
+                </div>
+                            <div class="col-md-3 product-left">
+                    <div class="product-main simpleCart_shelfItem">
+                        <!-- изображение -->
+                        <a href="product/casio-mrp-700-1avef.html" class="mask"><img class="img-responsive zoom-img" src="images/p-8.png" alt="" /></a>
+                        <div class="product-bottom">
+                            <!-- алиас - короткое наименование для ссылки (ЧПУ) -->
+                            <!-- наименование -->
+                            <h3><a href="product/casio-mrp-700-1avef.html">Royal London 41040-01</a></h3>
+                            <p>Explore Now</p>
+                            <h4>
+                                <!-- ссылка для добавления товара в корзину (текущая цена) -->
+                                <!-- в контроллере cart вызывается экшен add и передается id товара -->
+                                <a class="add-to-cart-link" href="cart/add?id=8" data-id="8"><i></i></a> <!-- цена товара -->
+                                <span class=" item_price">90 руб.</span>
+                                <!-- выводим старую цену, если такая есть -->
+                                                            </h4>
+                        </div>
+                        <!-- рассчет размера скидки (при наличии старой цены) -->
+                                            </div>
+                </div>
+                            <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--product-end-->
+</div>
+
+<!--information-starts-->
+<div class="information">
+    <div class="container">
+        <div class="infor-top">
+            <div class="col-md-3 infor-left">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><span class="fb"></span><h6>Facebook</h6></a></li>
+                    <li><a href="#"><span class="twit"></span><h6>Twitter</h6></a></li>
+                    <li><a href="#"><span class="google"></span><h6>Google+</h6></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 infor-left">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#"><p>Specials</p></a></li>
+                    <li><a href="#"><p>New Products</p></a></li>
+                    <li><a href="#"><p>Our Stores</p></a></li>
+                    <li><a href="contact.html"><p>Contact Us</p></a></li>
+                    <li><a href="#"><p>Top Sellers</p></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 infor-left">
+                <h3>My Account</h3>
+                <ul>
+                    <li><a href="account.html"><p>My Account</p></a></li>
+                    <li><a href="#"><p>My Credit slips</p></a></li>
+                    <li><a href="#"><p>My Merchandise returns</p></a></li>
+                    <li><a href="#"><p>My Personal info</p></a></li>
+                    <li><a href="#"><p>My Addresses</p></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 infor-left">
+                <h3>Store Information</h3>
+                <h4>The company name,
+                    <span>Lorem ipsum dolor,</span>
+                    Glasglow Dr 40 Fe 72.</h4>
+                <h5>+955 123 4567</h5>
+                <p><a href="mailto:example@email.com">contact@example.com</a></p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--information-end-->
+
+<!--footer-starts-->
+<div class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="col-md-6 footer-left">
+                <form>
+                    <input type="text" value="Enter Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+            <div class="col-md-6 footer-right">
+                <p>© 2015 Luxury Watches. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--footer-end-->
+
+<!-- Modal - модальное окно корзины -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!-- заголовок/шапка модального окна -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Корзина</h4>
+            </div>
+            <!-- тело - контент модального окна -->
+            <div class="modal-body">
+
+            </div>
+            <!-- футер -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
+                <a href="cart/view" id="cart-order" type="button" class="btn btn-primary">Оформить заказ</a>
+                <button type="button" id="cart-clean" class="btn btn-danger" onclick="clearCart()">Очистить корзину</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- прелоадер для скрытия контента при ожидании ответа от сервера (ajax-запрос) -->
+<div class="preloader"><img src="images/ring.svg" alt=""></div>
+
+<!-- получаем разметку со скриптами из вида -->
+<!-- _variables - ряд основных переменных, которые будут использоваться в главном скрипте -->
+		<script>
+			const Ishop = {
+				Consts: {"DEBUG":1,"DB_NAME":"ishop","ROOT":"D:\\YandexDisk\\__Web_dev\\_.server\\OpenServer\\domains\\ishop","WWW":"D:\\YandexDisk\\__Web_dev\\_.server\\OpenServer\\domains\\ishop\/public","APP":"D:\\YandexDisk\\__Web_dev\\_.server\\OpenServer\\domains\\ishop\/app","VENDOR":"D:\\YandexDisk\\__Web_dev\\_.server\\OpenServer\\domains\\ishop\/vendor","CORE":"D:\\YandexDisk\\__Web_dev\\_.server\\OpenServer\\domains\\ishop\/vendor\/ishop\/core","LIBS":"D:\\YandexDisk\\__Web_dev\\_.server\\OpenServer\\domains\\ishop\/vendor\/ishop\/core\/libs","TMP":"D:\\YandexDisk\\__Web_dev\\_.server\\OpenServer\\domains\\ishop\/tmp","CACHE":"D:\\YandexDisk\\__Web_dev\\_.server\\OpenServer\\domains\\ishop\/tmp\/cache","CONF":"D:\\YandexDisk\\__Web_dev\\_.server\\OpenServer\\domains\\ishop\/config","LAYOUT":"watches","CURRENCY_API":"http:\/\/www.cbr.ru\/scripts\/XML_daily.asp","CURRENCY_ROUND":4,"CUSTOM_DB_INSTANCE":false,"PATH":"http:\/\/ishop","ADMIN":"http:\/\/ishop\/admin","ROOT_BASE":"\/","ADMIN_BASE":"\/adminlte\/","U_IDNA_PROHIBITED_ERROR":66560,"U_IDNA_ERROR_START":66560,"U_IDNA_UNASSIGNED_ERROR":66561,"U_IDNA_CHECK_BIDI_ERROR":66562,"U_IDNA_STD3_ASCII_RULES_ERROR":66563,"U_IDNA_ACE_PREFIX_ERROR":66564,"U_IDNA_VERIFICATION_ERROR":66565,"U_IDNA_LABEL_TOO_LONG_ERROR":66566,"U_IDNA_ZERO_LENGTH_LABEL_ERROR":66567,"U_IDNA_DOMAIN_NAME_TOO_LONG_ERROR":66568,"U_IDNA_ERROR_LIMIT":66569,"U_STRINGPREP_PROHIBITED_ERROR":66560,"U_STRINGPREP_UNASSIGNED_ERROR":66561,"U_STRINGPREP_CHECK_BIDI_ERROR":66562,"IDNA_DEFAULT":0,"IDNA_ALLOW_UNASSIGNED":1,"IDNA_USE_STD3_RULES":2,"IDNA_CHECK_BIDI":4,"IDNA_CHECK_CONTEXTJ":8,"IDNA_NONTRANSITIONAL_TO_ASCII":16,"IDNA_NONTRANSITIONAL_TO_UNICODE":32,"INTL_IDNA_VARIANT_2003":0,"INTL_IDNA_VARIANT_UTS46":1,"IDNA_ERROR_EMPTY_LABEL":1,"IDNA_ERROR_LABEL_TOO_LONG":2,"IDNA_ERROR_DOMAIN_NAME_TOO_LONG":4,"IDNA_ERROR_LEADING_HYPHEN":8,"IDNA_ERROR_TRAILING_HYPHEN":16,"IDNA_ERROR_HYPHEN_3_4":32,"IDNA_ERROR_LEADING_COMBINING_MARK":64,"IDNA_ERROR_DISALLOWED":128,"IDNA_ERROR_PUNYCODE":256,"IDNA_ERROR_LABEL_HAS_DOT":512,"IDNA_ERROR_INVALID_ACE_LABEL":1024,"IDNA_ERROR_BIDI":2048,"IDNA_ERROR_CONTEXTJ":4096},
+				Vars: {"path":"http:\/\/ishop","symboleLeft":"","symboleRight":" \u0440\u0443\u0431."}
+			};
+			Object.freeze(Ishop); // замораживает объект
+			Object.freeze(Ishop.consts); // замораживает объект
+			Object.freeze(Ishop.vars); // замораживает объект
+		</script>
+<!-- lib -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/typeahead.bundle.js"></script>
+<script src="js/imagezoom.js"></script>
+<script src="megamenu/js/megamenu.js"></script>
+<script src="js/jquery.easydropdown.js"></script>
+<script src="js/accordion.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/flexslider.js"></script>
+<script src="adminlte/bower_components/ckeditor/ckeditor.js"></script>
+<script src="adminlte/bower_components/ckeditor/adapters/jquery.js"></script>
+<!-- init -->
+<script src="js/_core.js"></script>
+<script src="js/_functions.js"></script>
+<script src="js/_variables.js"></script>
+<!-- main -->
+<script src="js/editor.js"></script>
+<script src="js/main.js"></script>
+<!-- add -->
+
+<!-- _variables - ряд javaScript переменных (основных), которые будут использоваться в главном скрипте -->
+
+<!-- <script src="js/_variables.js"></script> -->
+
+<!--jquery-->
+<!-- <script src="js/jquery-1.11.0.min.js"></script> -->
+<!--bootstrap-->
+<!-- <script src="js/bootstrap.min.js"></script> -->
+
+<!--validator-->
+<!-- <script src="js/validator.js"></script> -->
+<!--search-->
+<!-- <script src="js/typeahead.bundle.js"></script> -->
+<!--imagezoom-->
+<!-- <script src="js/imagezoom.js"></script> -->
+
+<!--megamenu-->
+<!-- <script src="megamenu/js/megamenu.js"></script> -->
+<!--dropdown-->
+<!-- <script src="js/jquery.easydropdown.js"></script> -->
+<!--accordion-->
+<!-- <script src="js/accordion.js"></script> -->
+
+<!--Slider-Starts-Here-->
+<!--responsiveslides-->
+<!-- <script src="js/responsiveslides.min.js"></script>
+<script src="js/slider.js"></script> -->
+<!--flexslider-->
+<!-- <script defer src="js/jquery.flexslider.js"></script>
+<script src="js/flexslider.js"></script> -->
+<!--Slider-End-Here-->
+
+<!--CKeditor-Starts-Here-->
+<!--ckeditor-->
+<!-- <script src="adminlte/bower_components/ckeditor/ckeditor.js"></script>
+<script src="adminlte/bower_components/ckeditor/adapters/jquery.js"></script> -->
+<!--CKeditor-End-Here-->
+
+<!--editor-->
+<!-- <script src="js/editor.js"></script> -->
+<!--main script-->
+<!-- <script src="js/main.js"></script> -->
+
+<!-- выводим все запросы выполняемые RedBeanPHP -->
+</body>
+</html>

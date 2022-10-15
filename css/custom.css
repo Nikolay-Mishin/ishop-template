@@ -1,0 +1,89 @@
+/* отменяем перенос слов в таблице корзины */
+#cart table {
+	white-space: nowrap;
+}
+
+.modal .quantity {
+	margin: 0;
+}
+
+#cart-recalc {
+	/* display: none; */
+	float: right;
+}
+
+.fa-eye {
+	color: #337ab7;
+}
+
+/* комментарии */
+
+.comments {
+	font-size: 16px;
+}
+
+.media-body .author {
+	display: inline-block;
+	font-size: 2.1rem;
+	color: #000;
+	font-weight: 700;
+}
+
+.media-body .metadata {
+	display: inline-block;
+	margin-left: .5rem;
+	color: #777;
+	font-size: 1.1rem;
+}
+
+.footer-comment {
+	color: #777;
+}
+
+.vote.plus:hover {
+	color: green;
+}
+
+.vote.minus:hover {
+	color: red;
+}
+
+.vote {
+	cursor: pointer;
+}
+
+.rating.plus {
+	color: green;
+}
+
+.rating.minus {
+	color: red;
+}
+
+.comment-reply a {
+	color: #777;
+}
+
+	.comment-reply a:hover, .comment-reply a:focus {
+		color: #000;
+		text-decoration: none;
+	}
+
+.devide {
+	padding: 0px 4px;
+	font-size: 0.9em;
+}
+
+.media-text {
+	margin-bottom: 0.25rem;
+}
+
+.title-comments {
+	font-size: 1.4rem;
+	font-weight: bold;
+	line-height: 1.5rem;
+	color: rgba(0, 0, 0, .87);
+	margin-bottom: 1rem;
+	padding-bottom: .25rem;
+	border-bottom: 1px solid rgba(34, 36, 38, .15);
+}
